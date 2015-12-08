@@ -66,7 +66,7 @@ wx.StaticText(myPanel, pos=(labelPosX, 90), label='Gravity', style=wx.ALIGN_CENT
 gEntry = wx.TextCtrl(myPanel, pos=(boxPosX, 90),value=str(g), size=textBoxDims, style=wx.TE_PROCESS_ENTER)
 gEntry.Bind(wx.EVT_TEXT_ENTER, updateG)
 
-wx.StaticText(myPanel, pos=(labelPosX, 110), label='Mass of ball', style=wx.ALIGN_CENTRE)
+wx.StaticT≡jedi=0, ext(myPanel, pos=(l≡ (*args, ***kwargs*) ≡jedi≡abelPosX, 110), label='Mass of ball', style=wx.ALIGN_CENTRE)
 mBallEntry = wx.TextCtrl(myPanel, pos=(boxPosX, 110), value=str(mball),
 size=textBoxDims, style=wx.TE_PROCESS_ENTER)
 mBallEntry.Bind(wx.EVT_TEXT_ENTER, updateMBall)
@@ -95,13 +95,15 @@ vball = vector (0.319,-0.124,0.233)
 ## improve the display
 scene.autoscale = 0             ## don't let camera zoom in and out as ball moves
 scene.center = vector(0,-L0,0)   ## move camera down to improve display visibility
+
+# Animations
 trail = curve(color=ball.color) ## before the loop
 fnetArrow = arrow(color=color.green)
 pArrow = arrow(color=color.red)
 scene.autoscale = False
 scene.center = vector(0,-L0,0)   ## move camera down to improve display visibility
 
-if True:
+while True: # Keeps the display live after the loop has finished
     while t < 100:
         rate(speed)
         L = ball.pos - ceiling.pos
