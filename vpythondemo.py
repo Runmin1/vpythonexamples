@@ -66,7 +66,7 @@ wx.StaticText(myPanel, pos=(labelPosX, 90), label='Gravity', style=wx.ALIGN_CENT
 gEntry = wx.TextCtrl(myPanel, pos=(boxPosX, 90),value=str(g), size=textBoxDims, style=wx.TE_PROCESS_ENTER)
 gEntry.Bind(wx.EVT_TEXT_ENTER, updateG)
 
-wx.StaticT≡jedi=0, ext(myPanel, pos=(l≡ (*args, ***kwargs*) ≡jedi≡abelPosX, 110), label='Mass of ball', style=wx.ALIGN_CENTRE)
+wx.StaticText(myPanel, pos=(PosX, 110), label='Mass of ball', style=wx.ALIGN_CENTRE)
 mBallEntry = wx.TextCtrl(myPanel, pos=(boxPosX, 110), value=str(mball),
 size=textBoxDims, style=wx.TE_PROCESS_ENTER)
 mBallEntry.Bind(wx.EVT_TEXT_ENTER, updateMBall)
